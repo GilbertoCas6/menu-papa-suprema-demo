@@ -1,82 +1,511 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dai Burguer | Menú</title>
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="robots" content="noindex,nofollow">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAV -->
   <header class="navbar">
-    <img src="img/logo.png" alt="Logo Dai Burguer" class="logo">
-    <h1>Dai Burguer</h1>
+    <div class="brand">
+      <img src="img/logo.png" alt="Dai Burguer" class="logo">
+      <div class="titles">
+        <h1>Dai Burguer</h1>
+        <span>Brisas del Este · Santo Domingo Este</span>
+      </div>
+    </div>
+    <nav class="navlinks">
+      <a href="#hamburguesas">Hamburguesas</a>
+      <a href="#perritos-sandwich">Hot Dog & Sandwich</a>
+      <a href="#burritos-quesadillas">Burritos & Quesadillas</a>
+      <a href="#papas-yaroas">Papas & Yaroas</a>
+      <a href="#pollo-picaderas">Pollo & Picaderas</a>
+      <a href="#ensaladas-extras">Ensaladas & Extras</a>
+      <a href="#bebidas">Bebidas</a>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>¡El mejor sabor del barrio!</h2>
-      <p>Haz tu pedido rápido y fácil por WhatsApp o visítanos en Brisas del Este.</p>
-      <a href="https://wa.me/18299327855" target="_blank" class="btn-whatsapp">Pedir por WhatsApp</a>
-    </div>
-  </section>
+ <!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h2>¡El mejor sabor del barrio!</h2>
 
-  <!-- MENÚ -->
-  <section class="menu">
-    <h2>Menú Principal</h2>
-    <div class="menu-grid">
+    <p class="hero-desc">
+      Elige tu plato, agrega al <strong>Carrito</strong> y envíalo por WhatsApp. Fácil, rápido y sin dudas de precio.
+    </p>
 
-      <div class="menu-item">
-        <img src="img/hamburguesa.png" alt="Hamburguesa Clásica">
-        <h3>Hamburguesa Clásica</h3>
-        <p>Pan artesanal, carne 100 % res, queso cheddar y salsa especial.</p>
-        <span class="price">RD$ 350</span>
+<p class="hint">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right:6px;">
+    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10
+    0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.16 14.26L6.03
+    6h13.45l-.89 6H7.16zM20 4H5.21l-.94-2H1v2h2l3.6
+    7.59-1.35 2.45C4.52 14.37 5.48 16 7 16h12v-2H7.42c-.14
+    0-.25-.11-.25-.25l.03-.12L8.1 12h7.45c.75 0 1.41-.41
+    1.75-1.03L21 4z"/>
+  </svg>
+  Toca un precio para <strong>añadir al carrito</strong>. Puedes ajustar cantidades dentro del carrito.
+</p>
+
+
+
+    <p class="shipping-note">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M20 8h-3V4H3v13h2a3 3 0 0 0 6 0h4a3 3 0 0 0 6 0h2v-5l-3-4zM6
+    19a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm12 0a1 1 0 1 1
+    0-2 1 1 0 0 1 0 2z"/>
+  </svg>
+  <strong>Envíos:</strong> dentro de <b>Brisas del Este</b> desde <b>RD$50</b>.
+  Zonas cercanas pueden variar; <b>confirma por WhatsApp</b>.
+</p>
+
+  </div>
+</section>
+
+
+  <!-- CONTENIDO -->
+  <main class="container">
+
+    <!-- HAMBURGUESAS -->
+    <section id="hamburguesas" class="section">
+      <h3>Hamburguesas</h3>
+      <div class="grid">
+
+        <article class="card">
+          <img src="img/hamburguesa.png" alt="Hamburguesa clásica">
+          <h4>Hamburguesa</h4>
+          <p>Clásica de la casa. Pan suave, carne jugosa y salsas.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Hamburguesa (Sola)" data-price="125">Sola · RD$125</button>
+            <button class="wa-btn" data-name="Hamburguesa + Papa" data-price="200">+ Papa · RD$200</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/HamburguesaCheeseLove.png" alt="Hamburguesa Cheese Love">
+          <h4>Hamburguesa Cheese Love</h4>
+          <p>Doble queso y sabor intenso. Nuestra favorita cremosa.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Hamburguesa Cheese Love" data-price="250">RD$250</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/hamburguesaBBQ.png" alt="Hamburguesa Bacon Chess BBQ">
+          <h4>Hamburguesa Bacon Chess BBQ</h4>
+          <p>Bacon crujiente + salsa BBQ ahumada.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Hamburguesa Bacon Chess BBQ" data-price="300">RD$300</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/hamburguesaDobleCarne.png" alt="Hamburguesa Doble Carne">
+          <h4>Hamburguesa Doble Carne</h4>
+          <p>Dos carnes y mucho queso. Para el antojo grande.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Hamburguesa Doble Carne" data-price="300">RD$300</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/HamburguesaTripleCarne.png" alt="Hamburguesa Triple Carne" class="img-contain">
+          <h4>Hamburguesa Triple Carne</h4>
+          <p>Triple power. Más proteína, más sabor.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Hamburguesa Triple Carne" data-price="350">RD$350</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/HamburguesaLaBomba.png" alt="Hamburguesa La Bomba" class="img-contain">
+          <h4>Hamburguesa La Bomba</h4>
+          <p>Súper cargada con todo. Explosión de sabor.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Hamburguesa La Bomba" data-price="350">RD$350</button>
+          </div>
+        </article>
+
+        <article class="card">
+         <img src="img/hamburguesaConSuprema.png" alt="Papa Suprema" class="fix-horizontal">
+
+          <h4>Hamburguesa + Papa Suprema</h4>
+<p>Combo estrella: burger + nuestra papa más famosa.</p>
+<div class="prices">
+  <button class="wa-btn" data-name="Hamburguesa + Papa Suprema" data-price="350">+ RD$350</button>
+</div>
+
+
       </div>
+    </section>
 
-      <div class="menu-item">
-        <img src="img/papa_suprema.png" alt="Papa Suprema">
-        <h3>Papa Suprema</h3>
-        <p>Papas fritas con queso derretido, carne, tocineta y salsa Dai.</p>
-        <span class="price">RD$ 300</span>
+    <!-- HOT DOG & SANDWICH -->
+    <section id="perritos-sandwich" class="section">
+      <h3>Hot Dog & Sandwich</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="img/hotdog.png" alt="Hot Dog">
+          <h4>Hot Dog</h4>
+          <p>Clásico, suave y sabroso.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Hot Dog (Sola)" data-price="75">Sola · RD$75</button>
+            <button class="wa-btn" data-name="Hot Dog + Papa" data-price="150">+ Papa · RD$150</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/hotdogConCarne.png" alt="Hot Dog con Carne">
+          <h4>Hot Dog con Carne</h4>
+          <p>Con topping de carne, full sabor.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Hot Dog con Carne (Sola)" data-price="100">Sola · RD$100</button>
+            <button class="wa-btn" data-name="Hot Dog con Carne + Papa" data-price="175">+ Papa · RD$175</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/club_sandwich.png" alt="Club Sandwich">
+          <h4>Club Sandwich</h4>
+          <p>Clásico con papas y salsa.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Club Sandwich" data-price="250">RD$250</button>
+          </div>
+        </article>
       </div>
+    </section>
 
-      <div class="menu-item">
-        <img src="img/burritos.png" alt="Burritos">
-        <h3>Burritos</h3>
-        <p>Tortilla de harina rellena de pollo o carne con vegetales y salsa.</p>
-        <span class="price">RD$ 280</span>
+    <!-- BURRITOS & QUESADILLAS -->
+    <section id="burritos-quesadillas" class="section">
+      <h3>Burritos & Quesadillas</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="img/burritoAlaParrilla.png" alt="Burrito de Pollo a la Parrilla">
+          <h4>Burrito de Pollo a la Parrilla</h4>
+          <p>Pollo dorado, suave y bien sazonado.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Burrito de Pollo a la Parrilla" data-price="200">RD$200</button>
+            <button class="wa-btn" data-name="Burrito de Pollo a la Parrilla + Papa" data-price="250">+ Papa · RD$250</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/burritoMixto.png" alt="Burrito Mixto">
+          <h4>Burrito Mixto</h4>
+          <p>Combinación ganadora.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Burrito Mixto" data-price="275">RD$275</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/burritocarnemolida.png" alt="Burrito de Carne Molida">
+          <h4>Burrito de Carne Molida</h4>
+          <p>Guiso casero con toque de la casa.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Burrito de Carne Molida" data-price="250">RD$250</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/burritoFull.png" alt="Burrito Full" class="img-contain">
+          <h4>Burrito Full</h4>
+          <p>Bien cargado de sabor.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Burrito Full" data-price="350">RD$350</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/quesadillas.png" alt="Quesadilla de Pollo" class="img-contain">
+          <h4>Quesadilla de Pollo</h4>
+          <p>Tortilla dorada y queso fundido.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Quesadilla de Pollo" data-price="250">RD$250</button>
+          </div>
+        </article>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- PAPAS & YAROAS -->
+    <section id="papas-yaroas" class="section">
+      <h3>Papas & Yaroas</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="img/papa_suprema.png" alt="Papa Suprema" class="img-papa">
+          <h4>Papa Suprema</h4>
+          <p>Papas con queso, carne y toques de la casa.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Papa Suprema" data-price="200">RD$200</button>
+            <button class="wa-btn" data-name="Papa Suprema (Gran)" data-price="300">Gran · RD$300</button>
+          </div>
+        </article>
 
-  <!-- UBICACIÓN -->
-  <section class="ubicacion">
-    <h2>Encuéntranos</h2>
-    <p>📍 <a href="https://www.google.com/maps?q=F5HJ%2BVPM,+Brisas+del+Este,+Santo+Domingo+Este+11707" target="_blank">
-      F5HJ+VPM, Brisas del Este, Santo Domingo Este 11707
-    </a></p>
-    <iframe 
-      src="https://www.google.com/maps?q=F5HJ%2BVPM,+Brisas+del+Este,+Santo+Domingo+Este+11707&output=embed"
-      allowfullscreen=""
-      loading="lazy">
-    </iframe>
-  </section>
+        <article class="card">
+          <img src="img/salchipapa.png" alt="Salchipapa">
+          <h4>Salchipapa</h4>
+          <p>Papas + salchichas con salsas.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Salchipapa" data-price="200">RD$200</button>
+            <button class="wa-btn" data-name="Salchipapa (Gran)" data-price="300">Gran · RD$300</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/yaroa.png" alt="Yaroa de Papa">
+          <h4>Yaroa de Papa</h4>
+          <p>Clásica y cremosa.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Yaroa de Papa" data-price="200">RD$200</button>
+            <button class="wa-btn" data-name="Yaroa de Papa (Gran)" data-price="350">Gran · RD$350</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/yaroapeperoni.png" alt="Yaroa de Papa Peperoni" class="img-contain">
+          <h4>Yaroa de Papa Peperoni</h4>
+          <p>La yaroa con el toque peperoni.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Yaroa de Papa Peperoni" data-price="200">RD$200</button>
+            <button class="wa-btn" data-name="Yaroa de Papa Peperoni (Gran)" data-price="350">Gran · RD$350</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- POLLO & PICADERAS -->
+    <section id="pollo-picaderas" class="section">
+      <h3>Pollo & Picaderas</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="img/pechugaCrema.png" alt="Pechuga a la Crema">
+          <h4>Pechuga a la Crema</h4>
+          <p>Pollo cremoso con toque casero.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Pechuga a la Crema" data-price="350">RD$350</button>
+          </div>
+        </article>
+
+        <article class="card">
+         <img src="img/papasConEnsaladaYpechugaPlancha.png" alt="Pechuga con papas y ensalada" class="fix-horizontal">
+          <h4>Pechuga a la Plancha con Papas y Ensalada</h4>
+          <p>Pechuga dorada, papas y ensalada fresca. Completo y balanceado.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Pechuga a la Plancha con Papas y Ensalada" data-price="300">
+              RD$300
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/servicio_alitas.png" alt="Alitas BBQ">
+          <h4>Alitas BBQ</h4>
+          <p>Glaseadas, jugosas. (4) o (6) unidades.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Alitas BBQ (4u)" data-price="250">4u · RD$250</button>
+            <button class="wa-btn" data-name="Alitas BBQ (6u)" data-price="350">6u · RD$350</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/servicio_alitas.png" alt="Alitas BBQ Picante">
+          <h4>Alitas BBQ Picante</h4>
+          <p>El mismo sabor con un picantico.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Alitas BBQ Picante (4u)" data-price="250">4u · RD$250</button>
+            <button class="wa-btn" data-name="Alitas BBQ Picante (6u)" data-price="350">6u · RD$350</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/picadera.png" alt="Picadera Pequeña">
+          <h4>Picadera Pequeña</h4>
+          <p>Mixta para compartir.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Picadera Pequeña" data-price="400">RD$400</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/picadera.png" alt="Picadera Grande">
+          <h4>Picadera Grande</h4>
+          <p>Misma presentación, porción mayor.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Picadera Grande" data-price="700">RD$700</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/picadera.png" alt="Picadera Familiar">
+          <h4>Picadera Familiar</h4>
+          <p>Para la casa entera.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Picadera Familiar" data-price="1200">RD$1,200</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ENSALADAS & EXTRAS -->
+    <section id="ensaladas-extras" class="section">
+      <h3>Ensaladas & Extras</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="img/ensaladaCesar.png" alt="Ensalada César">
+          <h4>Ensalada César</h4>
+          <p>Fresca y crujiente.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Ensalada César" data-price="300">RD$300</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/ensalada.png" alt="Ensalada">
+          <h4>Ensalada</h4>
+          <p>Porciones Mediana o Grande.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Ensalada (Mediana)" data-price="50">Med · RD$50</button>
+            <button class="wa-btn" data-name="Ensalada (Grande)" data-price="100">Gran · RD$100</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BEBIDAS -->
+    <section id="bebidas" class="section">
+      <h3>Bebidas</h3>
+      <div class="grid">
+        <article class="card">
+          <img src="img/agua.png" alt="Agua" class="img-contain">
+          <h4>Agua</h4>
+          <p>Siempre fría.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Agua" data-price="35">RD$35</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/refrescos.png" alt="Refresco" class="img-contain" onerror="this.style.display='none'">
+          <h4>Refresco</h4>
+          <p>Bien frío.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Refresco" data-price="35">RD$35</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/jugosNaturales.png" alt="Jugos Naturales" class="fix-vertical fix-jugo">
+
+          <h4>Jugos Naturales</h4>
+          <p>Mediano o Grande.</p>
+          <div class="prices">
+            <button class="wa-btn" data-name="Jugo Natural (Mediano)" data-price="50">Med · RD$50</button>
+            <button class="wa-btn" data-name="Jugo Natural (Grande)" data-price="60">Gran · RD$60</button>
+          </div>
+        </article>
+      </div>
+   
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="section ubicacion">
+      <h3>¿Dónde estamos?</h3>
+
+      <p class="map-link-container">
+  <a class="map-link" target="_blank"
+     href="https://maps.app.goo.gl/5TFpsZKYPTCWMjUC8">
+    📍 Abrir en Google Maps
+  </a>
+</p>
+     
+      
+     <!-- Mapa centrado en Daiburguer con un pin -->
+<!-- Daiburguer – Brisas del Este (coordenadas exactas) -->
+<iframe
+  src="https://www.google.com/maps?q=18.479718838387242,-69.81821344590377&z=18&output=embed"
+  width="100%"
+  height="320"
+  style="border:0; border-radius:12px;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+
+
+
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer>
-    <p>📞 <a href="https://wa.me/18299327855" target="_blank">+1 (829) 932-7855</a></p>
-    <p>🕓 Lunes a Domingo · 5 PM – 12 AM</p>
-    <p class="credit">Sitio de demostración creado por Gilberto</p>
-  </footer>
+  <div class="footer-inner">
+    <p>Síguenos en <a href="https://www.instagram.com/daiburgue_08/" target="_blank">@Daiburguer</a></p>
+    <p>Horario: Lunes, Miércoles, Jueves, Viernes, Sábados y Domingos · <b>Martes no laboramos</b></p>
+    
+    <div class="footer-rules">
+      <p><strong>Importante:</strong></p>
+      <ul>
+        <li>🚫 No llamamos ni recibimos llamadas — solo WhatsApp.</li>
+        <li>❗ No se permiten cancelaciones luego de 5 minutos del pedido.</li>
+        <li>🕛 Después de las 12:00 am, el delivery tiene costo adicional según la distancia.</li>
+        <li>📍 Si deseas servicio de delivery, por favor envía tu ubicación.</li>
+      </ul>
+    </div>
 
-  <!-- BOTÓN WHATSAPP FLOTANTE -->
-  <a href="https://wa.me/18299327855" target="_blank" class="float-whatsapp">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-  </a>
+    <p class="credit">Sitio de demostración creado por Gilberto</p>
+  </div>
+</footer>
+
+
+  <!-- BOTÓN FLOTANTE -->
+ <button id="fab-cart" class="fab-cart" aria-label="Abrir carrito" title="Abrir carrito">
+  <!-- SVG carrito blanco (no necesitas archivo extra) -->
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+    <path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 .001 4A2 2 0 0 0 17 18zM6.2 5l.3 1.5 1.2 6.2A2.5 2.5 0 0 0 10.1 15h6.9a2.5 2.5 0 0 0 2.4-1.9l1.4-5.6A1 1 0 0 0 20 6H7.1L6.8 4.8A2 2 0 0 0 4.9 3.5H3a1 1 0 1 0 0 2h1.9l1.3 6.7.2 1.1A3.5 3.5 0 0 0 10.1 17H17a1 1 0 1 0 0-2h-6.9a1.5 1.5 0 0 1-1.5-1.2L7.2 8H20l-1.2 4.9a1.5 1.5 0 0 1-1.4 1.1h-6.9c-.7 0-1.3-.5-1.5-1.2L7.6 7.5 7.4 6H6.2z"/>
+  </svg>
+</button>
+
+
+  <!-- ====== CARRITO (barra + panel) ====== -->
+  <div id="cart-bar" class="cart-bar">
+    <button id="open-cart" type="button" class="cart-bar-btn">
+  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"
+       fill="none" stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round"
+       style="margin-right:8px;">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h3l3.6 7.59a2 2 0 0 0 1.8 1.16h8.9a2 2 0 0 0 1.98-1.64l1.32-6.61H6"></path>
+  </svg>
+  Carrito <span id="cart-count">0</span> · <span id="cart-total">RD$0</span>
+</button>
+
+    <button id="checkout" class="cart-checkout">Enviar por WhatsApp</button>
+  </div>
+
+  <div id="cart-panel" class="cart-panel" aria-hidden="true">
+    <div class="cart-panel-inner">
+      <div class="cart-panel-header">
+        <h4>Tu pedido</h4>
+        <button id="close-cart" type="button" class="cart-close" aria-label="Cerrar">✕</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-summary">
+          <span>Total:</span>
+          <strong id="cart-total-big">RD$0</strong>
+        </div>
+        <button id="checkout2" class="cart-checkout large">Enviar por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+  <div id="cart-backdrop" class="cart-backdrop"></div>
 
   <script src="js/main.js"></script>
 </body>
